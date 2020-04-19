@@ -14,11 +14,451 @@ a
 		text-decoration: none
 	&:active
 		outline: none 0
+.btn
+	padding: 13px 39px
+	border: 2px solid $accent
+	text-transform: uppercase
+	font-weight: 700
+	color: #fff
+	display: inline-block
+	&_theme__darken
+		background-color: $accent
+		&:hover
+			background-color: #fff
+			color: $accent
 
+	&_theme__transparent
+		background-color: transparent
+		color: $accent
+
+	&_white
+		border-color: #fff
+		color: #fff
+		&:hover
+			background-color: #fff
+			color: $accent
+
+	&_black
+		border-color: $accent
+		color: $accent
+		&:hover
+			background-color: $accent
+			color: #fff
+		
 ul
 	margin: 0
 	padding: 0
 	list-style: none
+
+body
+	font-family: 'Nunito', sans-serif
+.ta-default
+	text-align: left
+.ta-center
+	text-align: center
+.rent_btn
+	text-transform: uppercase
+	color: $accent
+	font-weight: 700
+	position: relative
+	padding: 5px 0
+	background: none
+	border: none
+	outline: 0 none
+	cursor: pointer
+	margin: 0 15px
+	&:before
+		content: ''
+		position: absolute
+		height: 2px
+		width: 100%
+		background-color: $accent
+		bottom: 10px
+		opacity: 0
+		transition: .3s
+		left: 50%
+		transform: translateX(-50%)
+	&:hover:before
+		opacity: 1
+		bottom: 0
+	&:focus
+		outline: none 0
+	&.mixitup-control-active
+		&:before
+			opacity: 1
+			bottom: 0
+.top-header
+	background-color: $accent
+	padding: 10px 0
+	text-transform: capitalize
+	&__desc
+		color: #fff
+		font-size: 14px
+		font-weight: 200
+		margin-bottom: 0
+
+	&__address
+		margin-bottom: 0
+		text-align: right
+		a
+			color: #fff
+			font-size: 14px
+			font-weight: 200
+		i
+			color: #808080
+
+.bottom-header
+	padding-bottom: 40px
+	.top-logo
+		text-align: center
+		padding: 40px 0
+		img
+			height: 100%
+
+	.nav
+
+		&__item
+			padding: 0 15px
+		
+		&__link
+			text-transform: uppercase
+			color: $accent
+			font-weight: 700
+			position: relative
+			padding: 5px 0
+			&:before
+				content: ''
+				position: absolute
+				height: 2px
+				width: 100%
+				background-color: $accent
+				bottom: 10px
+				opacity: 0
+				transition: .3s
+				left: 50%
+				transform: translateX(-50%)
+			&:hover:before
+				opacity: 1
+				bottom: 0
+
+	.top-nav
+		display: flex
+		justify-content: center
+
+.slider
+	background: url('../img/bg.jpg') no-repeat
+	background-position: 50%
+	&__inner
+		padding-top: 250px
+		padding-bottom: 190px
+		text-align: center
+	&__title
+		text-transform: uppercase
+		font-size: 80px
+	&__desc
+		font-size: 22px
+		font-weight: 500
+		width: 75%
+		margin: 0 auto
+		margin-bottom: 40px
+
+.section__description
+	text-align: center
+
+	.section__title
+		text-transform: capitalize
+		position: relative
+		padding: 10px 0
+		font-size: 36px
+		&:before
+			content: ''
+			position: absolute
+			height: 4px
+			width: 50px
+			background-color: $accent
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+
+	.section__desc
+		color: #808080
+		width: 70%
+		margin: 0 auto
+.read-more__wrapper
+	padding: 30px 0
+.advantages
+	padding: 50px 0
+
+	&__wrapper
+		padding: 50px 0
+
+	&__item
+		text-align: center
+		padding: 50px 15px
+		border: 1px solid #ccc
+	&__icon
+		font-size: 42px
+		padding-bottom: 10px
+	
+	&__title
+		text-transform: uppercase
+		font-size: 16px
+		a
+			color: $accent
+			&:hover
+				color: #808080
+
+	&__desc
+		color: #808080
+		font-size: 15px
+
+.promo
+	display: flex
+	.container-width-50
+		padding: 100px 50px
+		width: 50%
+
+	&-img
+		background: url('../img/promo.jpg') no-repeat
+		background-position: 50%
+
+	&-bcg
+		background: url('../img/promo-bcg.jpg') no-repeat
+
+	&__title
+		color: #fff
+		text-transform: capitalize
+		font-size: 42px
+		line-height: 1
+		position: relative
+		padding-bottom: 20px
+		margin-bottom: 20px
+		&:before
+			content: ''
+			position: absolute
+			height: 5px
+			width: 70px
+			bottom: 0
+			left: 0
+			background-color: #fff
+
+	&__desc
+		color: #fff
+
+.rent
+	padding: 80px 0
+
+	&__filter
+		text-align: center
+		padding: 30px 0 0
+
+	&__item
+		border: 1px solid #ccc
+		text-align: center
+		position: relative
+		transition: .3s
+		height: 355px
+		padding: 30px 0
+		margin-bottom: 30px
+		a[href="#order-form"]
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			height: 100%
+		&:hover
+			border-color: #000
+	&__img
+		padding: 15px
+		height: 202px
+		img
+			width: 100%
+			object-fit: contain
+			height: 100%
+
+	&__text
+		padding: 20px 0
+
+	&__name
+		color: $accent
+		font-size: 600
+		font-size: 16px
+	&__price
+		color: $accent
+		font-weight: 900
+		font-size: 24px
+
+	&__items
+		padding: 40px 0 0
+
+
+.banner
+	padding: 80px 0
+	background: url('../img/project7.webp') no-repeat
+	background-position: 50%
+	background-size: cover
+
+	&__title
+		font-size: 82px
+		line-height: 1
+		font-weight: 600
+		text-transform: uppercase
+
+	&__inner
+		text-align: center
+
+.photograph
+	padding: 80px 0
+
+	&__item
+		border: 1px solid #ccc
+		text-align: center
+	&__img
+		padding: 15px
+		img
+			width: 100%
+
+	&__name
+		position: relative
+		padding-bottom: 15px
+		text-transform: uppercase
+		padding-top: 15px
+		&:before
+			content: ''
+			position: absolute
+			height: 1px
+			width: 60px
+			background-color: #cccccc
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+	&__profi
+		font-style: italic
+		font-size: 14px
+
+	&__social
+		display: flex
+		justify-content: center
+		padding-bottom: 15px
+		li
+			padding: 0 10px
+			a
+				font-size: 20px
+				color: $accent
+				display: inline-block
+				transition: .1s
+				&:hover
+					transform: scale(1.2)
+
+.photo-from-us
+	background: url('../img/bg3.jpg') no-repeat
+	padding: 80px 0
+	.popup-gallery
+		padding: 50px 0 30px
+	&__img
+		width: 260px
+		height: 260px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	
+	&__item
+		margin-bottom: 30px
+
+.page-footer
+	background: url('../img/promo-bcg.jpg') no-repeat
+	background-size: cover
+	padding: 80px 0
+	color: #fff
+	&_p
+		padding: 30px 0
+		opacity: .6
+		font-size: 14px
+		margin-bottom: 0
+	
+	.social-bottom
+		display: flex
+		li
+			&:not(:first-child)
+				padding-left: 25px
+		a
+			color: #fff
+			opacity: .6
+			&:hover
+				opacity: 1
+
+	&__title
+		text-transform: uppercase
+		margin-bottom: 30px
+	
+	.nav__bottom
+		li
+			margin-bottom: 5px
+		a
+			text-transform: uppercase
+			color: #fff
+			opacity: .6
+			&:hover
+				opacity: 1
+
+	&__contacts
+		li
+			color: #fff
+			margin-bottom: 5px
+			font-size: 14px
+			font-weight: 300
+			a
+				color: #fff
+				opacity: .6
+
+
+.input-form_sub
+	width: 100%
+	min-width: 50px
+	max-width: 100%
+	background: none
+	border-color: rgba(255, 255, 255, 0.3)
+	text-transform: uppercase
+	font-size: 12px
+	font-size: 0.75rem
+	font-weight: 700
+	padding-right: 65px
+	text-align: center
+	outline: 0 none
+	color: #808080
+	padding-top: 15px
+	padding-bottom: 15px
+#subscribe
+	position: relative
+.input-submit
+	background: none
+	outline: 0 none
+	border: none
+	cursor: pointer
+	color: #fff
+	position: absolute
+	top: 50%
+	right: 35px
+	transform: translateY(-50%)
+
+.litle-text
+	color: #fff
+	opacity: .6
+	font-size: 11px
+	text-align: center
 /*==========  user style  ==========*/
+.mixitup-control
+	background-color: transparent
+	border: 1px solid #ccc
+	width: 30px
+	height: 30px
+	cursor: pointer
+	font-family: 'Nunito', sans-serif
+	&.mixitup-control-active
+		border-color: #000
+	&:focus
+		outline: 0 none
+.mixitup-page-list
+	text-align: center
 
 @import "media" // Always at the end
