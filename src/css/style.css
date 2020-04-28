@@ -7725,6 +7725,7 @@ a:active {
   color: #fff;
   display: inline-block;
   cursor: pointer;
+  transition: .3s;
 }
 
 .btn_theme__darken {
@@ -7927,6 +7928,25 @@ body {
   font-weight: 700;
   position: relative;
   padding: 5px 0;
+}
+
+.bottom-header .nav__link.active:before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #252525;
+  bottom: 0;
+  opacity: 1;
+  transition: .3s;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+  .bottom-header .nav__link.active {
+    content: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -8270,6 +8290,10 @@ body {
   padding: 80px 0;
 }
 
+.photograph__desc {
+  padding: 15px;
+}
+
 .photograph__item {
   border: 1px solid #ccc;
   text-align: center;
@@ -8575,6 +8599,154 @@ body {
 
 .form__rent__btn__wrap {
   text-align: center;
+}
+
+.page__title {
+  background-color: #252525;
+  padding: 20px 0;
+}
+
+.page__title h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.other-page .banner {
+  padding: 200px 0;
+}
+
+.other-page .banner__title {
+  font-size: 32px;
+  text-align: left;
+  position: relative;
+}
+
+.other-page .banner__title:before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 80px;
+  background-color: #252525;
+  left: 0;
+  bottom: -20px;
+}
+
+.other-page .photograph__item {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.other-page .photograph__img {
+  padding: 0;
+  max-height: 170px;
+  overflow: hidden;
+}
+
+.other-page .about-us {
+  padding-top: 120px;
+}
+
+@media (max-width: 1199px) {
+  .other-page .about-us__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .other-page .about-us__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.other-page .about-us img {
+  width: 100%;
+}
+
+.other-page .benefits {
+  padding-top: 120px;
+}
+
+.other-page .benefits .benefits-1,
+  .other-page .benefits .benefits-2,
+  .other-page .benefits .benefits-3,
+  .other-page .benefits .benefits-4 {
+  font-size: 28px !important;
+}
+
+.other-page .benefits__wrap {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .other-page .benefits__wrap {
+    margin-bottom: 30px;
+  }
+}
+
+.other-page .benefits__title {
+  margin-top: -50px;
+  font-size: 20px;
+}
+
+.other-page .contacts {
+  padding: 100px 0;
+}
+
+.other-page .contacts__title {
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+
+.other-page .contacts__contacts li {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.other-page .contacts__contacts li a {
+  color: #808080;
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: none;
+}
+
+.other-page .contacts__social {
+  display: flex;
+  flex-direction: row;
+}
+
+.other-page .contacts__social li {
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+.other-page .contacts__social li a {
+  color: #808080;
+}
+
+.other-page .contacts__social li a:hover {
+  color: #000;
+}
+
+.other-page .contacts #feedback ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.other-page .contacts #feedback ol li {
+  margin-bottom: 15px;
+}
+
+.other-page .contacts #feedback ol input,
+    .other-page .contacts #feedback ol textarea {
+  width: 100%;
 }
 
 /*==========  Desktop First  ==========*/

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Контакты - Фото Студия "VinCent"</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="mobile d-block d-md-none">
+      <div class="row">
+        <div class="col-12">
+          <div class="mobile__btn__wrap">
+            <button class="mobile__btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <h3 class="top-header__desc">Самая большая фотостудия в Краснодаре</h3>
+          </div>
+          <div class="col-md-6 col-12">
+            <address class="top-header__address">
+              <a class="popup-gmaps"
+                href="https://yandex.ru/map-widget/v1/?um=constructor%3A4ead788ef3da2fa14aab3d516419d66fc89c4f43ea5e0d3384a545c4ee02ea4c&amp;source=constructor"><i
+                  class="fa fa-map-marker" aria-hidden="true"></i> г.
+                Краснодар, улица Крупской, 8Б</a>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 top-logo">
+            <img src="img/logo.png" alt="логотип">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <nav class="nav__wrapper">
+            <ul class="nav top-nav">
+              <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+              <li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
+              <li class="nav__item"><a class="nav__link" href="bron.html">Бронирование</a></li>
+              <li class="nav__item"><a class="nav__link" href="room.html">Залы</a></li>
+              <li class="nav__item"><a class="nav__link" href="information.html">Информация</a></li>
+              <li class="nav__item"><a class="nav__link active" href="contact.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page__title">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h1>Контакты</h1>
+      </div>
+    </div>
+  </div>
+
+  <main class="other-page">
+    <div class="map">
+      <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4ead788ef3da2fa14aab3d516419d66fc89c4f43ea5e0d3384a545c4ee02ea4c&amp;width=100%25&amp;height=650&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div>
+
+    <div class="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <h2 class="contacts__title">
+              Контакты
+            </h2>
+            <address class="contacts__contacts">
+              <ul>
+                <li>Адрес: <a class="popup-gmaps"
+                    href="https://yandex.ru/map-widget/v1/?um=constructor%3A4ead788ef3da2fa14aab3d516419d66fc89c4f43ea5e0d3384a545c4ee02ea4c&amp;source=constructor">
+                    г.
+                    Краснодар, улица Крупской, 8Б</a></li>
+                <li>Email: <a href="mailto:mail@mail.ru">mail@mail.ru</a></li>
+                <li>Тел.: <a href="tel:+79181112224">01: +7 918 111 22 24</a></li>
+                <li>Тел.: <a href="tel:+79181232224">02: +7 918 123 22 24</a></li>
+                <li>Тел.: <a href="tel:+79181322224">03: +7 918 132 22 24</a></li>
+              </ul>
+            </address>
+            <ul class="contacts__social">
+              <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-8 col-12">
+            <h2 class="contacts__title mt-sm-5 mt-md-0">
+              Напишите нам
+            </h2>
+            <form id="feedback">
+              <fieldset style="border:0;">
+                <ol>
+                  <li>
+                    <input id="name" name="name" type="text" placeholder="Имя" required="" class="input-form">
+                  </li>
+                  <li>
+                    <input id="email-feedback" name="email-feedback" type="email" placeholder="mail@mail.ru" required=""
+                      class="input-form">
+                  </li>
+                  <li>
+                    <textarea id="comment" name="comment" placeholder="Ваше сообщение" class="input-form"
+                      rows="8"></textarea>
+                  </li>
+                  <input id="order" name="order" type="text" hidden>
+                </ol>
+              </fieldset>
+              <div class="feedback__btn__wrap" id="feedback__btn__wrap">
+                <button class="feedback__btn btn btn_theme__darken" form="feedback">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="page-footer__item">
+            <div class="logo-bottom">
+              <img src="img/logo-white.png" alt="логотип">
+            </div>
+            <p class="page-footer_p">Помимо того, что вы снимаете свои обычные телефонные фотографии, очень часто и для
+              многих других случаев
+              людям нужна профессиональная фотография. Мы предоставляем как студию, так и фотографа!</p>
+            <ul class="social-bottom">
+              <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-12">
+          <div class="page-footer__item">
+            <h2 class="page-footer__title">
+              Навигация
+            </h2>
+            <nav>
+              <ul class="nav nav__bottom">
+                <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="bron.html">Бронирование</a></li>
+                <li class="nav__item"><a class="nav__link" href="room.html">Залы</a></li>
+                <li class="nav__item"><a class="nav__link" href="information.html">Информация</a></li>
+                <li class="nav__item"><a class="nav__link" href="contact.html">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="page-footer__item">
+            <h2 class="page-footer__title">
+              Контакты
+            </h2>
+            <address class="page-footer__contacts">
+              <ul>
+                <li><a class="popup-gmaps"
+                    href="https://yandex.ru/map-widget/v1/?um=constructor%3A4ead788ef3da2fa14aab3d516419d66fc89c4f43ea5e0d3384a545c4ee02ea4c&amp;source=constructor">
+                    г.
+                    Краснодар, улица Крупской, 8Б</a></li>
+                <li>Email: <a href="mailto:mail@mail.ru">mail@mail.ru</a></li>
+                <li>Тел.: <a href="tel:+79181112224">01: +7 918 111 22 24</a></li>
+                <li>Тел.: <a href="tel:+79181232224">02: +7 918 123 22 24</a></li>
+                <li>Тел.: <a href="tel:+79181322224">03: +7 918 132 22 24</a></li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="page-footer__item">
+            <h2 class="page-footer__title">
+              Подпишись на рассылку
+            </h2>
+            <p class="litle-text">
+              *-Узнавайте последние новости, получайте скидки и учавствуйте в акциях
+            </p>
+            <form id="subscribe">
+              <input class="input-form_sub" type="email" name="email" id="email" placeholder="Ваш e-mail">
+              <button type="submit" form="subscribe" class="input-submit"><i class="fa fa-paper-plane"
+                  aria-hidden="true"></i></button>
+            </form>
+            <div id="result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/jquery.mixitup.pagination.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>

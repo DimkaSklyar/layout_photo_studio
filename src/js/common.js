@@ -1,17 +1,17 @@
 $(document).ready(function () {
 
-$("a[href='#test-form-rent']").click(function (e) { 
-  e.preventDefault();
-  $("#order-product").text($(this).find(".rent__name").text());
-  $("#order").text($(this).find(".rent__name").text());
-});
+  $("a[href='#test-form-rent']").click(function (e) {
+    e.preventDefault();
+    $("#order-product").text($(this).find(".rent__name").text());
+    $("#order").text($(this).find(".rent__name").text());
+  });
 
 
-$(".mobile__btn").click(function (e) { 
-  e.preventDefault();
-  $(".nav__wrapper").toggleClass("active");
-  $(this).children().toggleClass("fa-bars fa-times");
-});
+  $(".mobile__btn").click(function (e) {
+    e.preventDefault();
+    $(".nav__wrapper").toggleClass("active");
+    $(this).children().toggleClass("fa-bars fa-times");
+  });
 
   $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
     disableOn: 700,
@@ -58,18 +58,64 @@ $(".mobile__btn").click(function (e) {
       }
     }
   });
-  let count = 8;
-  if ($(window).width() < 700) {
-    count = 6;
-  }
-  var mixer = mixitup(".rent__items", {
-    pagination: {
-      
-      limit:  count // impose a limit of 8 targets per page
-    }
-  });
+
+
+  $(".benefits-1").knob();
+  $(".benefits-2").knob();
+  $(".benefits-3").knob();
+  $(".benefits-4").knob();
 
 });
+
+let benefits1 = $(".benefits-1");
+let benefits2 = $(".benefits-2");
+let benefits3 = $(".benefits-3");
+let benefits4 = $(".benefits-4");
+var show = true;
+var countbox = ".benefits";
+$(window).on("scroll load resize", function () {
+  if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+  var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+  var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+  var w_height = $(window).height(); // Высота окна браузера
+  var d_height = $(document).height(); // Высота всего документа
+  var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+  if (w_top + 750 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+
+    
+    $({ animatedVal: 0 }).animate({ animatedVal: 540 }, {
+      duration: 2000,
+      easing: "swing",
+      step: function () {
+        $(benefits1).val(Math.ceil(this.animatedVal)).trigger("change");
+      }
+    });
+    $({ animatedVal: 0 }).animate({ animatedVal: 7200 }, {
+      duration: 2000,
+      easing: "swing",
+      step: function () {
+        $(benefits2).val(Math.ceil(this.animatedVal)).trigger("change");
+      }
+    });
+    $({ animatedVal: 0 }).animate({ animatedVal: 19 }, {
+      duration: 2000,
+      easing: "swing",
+      step: function () {
+        $(benefits3).val(Math.ceil(this.animatedVal)).trigger("change");
+      }
+    });
+    $({ animatedVal: 0 }).animate({ animatedVal: 8 }, {
+      duration: 2000,
+      easing: "swing",
+      step: function () {
+        $(benefits4).val(Math.ceil(this.animatedVal)).trigger("change");
+      }
+    });
+
+    show = false;
+  }
+});
+
 
 
 function AjaxFormRequest(result_id, formMain, url) {
@@ -91,7 +137,7 @@ function AjaxFormRequest(result_id, formMain, url) {
     error: function (response) {
       var par = document.getElementById(result_id);
       var error = document.createElement('p');
-      error.classList.add("mt-3","result");
+      error.classList.add("mt-3", "result");
       error.innerHTML = "Возникла ошибка при отправке формы.";
       par.appendChild(error);
       setTimeout(func, 700);
@@ -104,12 +150,17 @@ function func() {
 }
 
 
-$("#test-form-rent").submit(function (e) { 
+$("#test-form-rent").submit(function (e) {
   e.preventDefault();
   AjaxFormRequest('form__rent__btn__wrap', 'test-form-rent', './order.php');
 });
 
-$("#subscribe").submit(function (e) { 
+$("#subscribe").submit(function (e) {
   e.preventDefault();
   AjaxFormRequest('result', 'subscribe', './subscribe.php');
+});
+
+$("#feedback").submit(function (e) {
+  e.preventDefault();
+  AjaxFormRequest('feedback__btn__wrap', 'feedback', './feedback.php');
 });
