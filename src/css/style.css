@@ -8825,6 +8825,35 @@ body {
   text-align: center;
 }
 
+.other-page .room {
+  padding: 100px 0;
+}
+
+.other-page .room .read-more__wrapper {
+  text-align: center;
+}
+
+.other-page .room__img img {
+  width: 100%;
+}
+
+.other-page .room p {
+  font-size: 18px;
+}
+
+.other-page .room p.small {
+  font-size: 16px;
+  color: #808080;
+}
+
+.other-page .room h2 {
+  margin-top: 25px;
+}
+
+.other-page .photo-from-us {
+  background-size: cover;
+}
+
 input[type=datetime-local]::-webkit-inner-spin-button {
   display: none;
 }
