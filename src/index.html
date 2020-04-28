@@ -12,13 +12,22 @@
 
 <body>
 	<header class="page-header">
+		<div class="mobile d-block d-md-none">
+			<div class="row">
+				<div class="col-12">
+					<div class="mobile__btn__wrap">
+						<button class="mobile__btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="top-header">
 			<div class="container">
 				<div class="row">
-					<div class="col-6">
+					<div class="col-md-6 col-12">
 						<h3 class="top-header__desc">Самая большая фотостудия в Краснодаре</h3>
 					</div>
-					<div class="col-6">
+					<div class="col-md-6 col-12">
 						<address class="top-header__address">
 							<a class="popup-gmaps"
 								href="https://yandex.ru/map-widget/v1/?um=constructor%3A4ead788ef3da2fa14aab3d516419d66fc89c4f43ea5e0d3384a545c4ee02ea4c&amp;source=constructor"><i
@@ -37,7 +46,7 @@
 					</div>
 				</div>
 				<div class="row justify-content-center">
-					<nav>
+					<nav class="nav__wrapper">
 						<ul class="nav top-nav">
 							<li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
 							<li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
@@ -78,7 +87,7 @@
 			</div>
 			<div class="container advantages__wrapper">
 				<div class="row">
-					<div class="col-3">
+					<div class="col-lg-3 col-md-6 col-12">
 						<div class="advantages__item">
 							<div class="advantages__icon"><i class="fa fa-star-half-o" aria-hidden="true"></i></div>
 							<h3 class="advantages__title"><a href="#">Аренда студии</a></h3>
@@ -86,7 +95,7 @@
 								устойчивых камер - у нас есть все для любого любителя.</p>
 						</div>
 					</div>
-					<div class="col-3">
+					<div class="col-lg-3 col-md-6 col-12">
 						<div class="advantages__item">
 							<div class="advantages__icon">
 								<i class="fa fa-instagram" aria-hidden="true"></i>
@@ -96,7 +105,7 @@
 								или просто для удовольствия, есть такая косметика.</p>
 						</div>
 					</div>
-					<div class="col-3">
+					<div class="col-lg-3 col-md-6 col-12">
 						<div class="advantages__item">
 							<div class="advantages__icon"><i class="fa fa-magic" aria-hidden="true"></i></i></div>
 							<h3 class="advantages__title"><a href="#">Фотографы</a></h3>
@@ -104,7 +113,7 @@
 								фотографии - это только одна из услуг, которые мы предлагаем.</p>
 						</div>
 					</div>
-					<div class="col-3">
+					<div class="col-lg-3 col-md-6 col-12">
 						<div class="advantages__item">
 							<div class="advantages__icon"><i class="fa fa-tachometer" aria-hidden="true"></i></div>
 							<h3 class="advantages__title"><a href="#">Залы для фотосъёмок</a></h3>
@@ -154,9 +163,9 @@
 					<button class="rent_btn" type="button" data-filter=".category-c">Вспышки</button>
 				</div>
 				<div class="row rent__items">
-					<div class="col-3 mix category-a">
+					<div class="col-lg-3 col-md-6 col-12 mix category-a">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#order-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-1.jpg" alt="">
 								</div>
@@ -167,9 +176,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-a">
+					<div class="col-lg-3 col-md-6 col-12 mix category-a">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-2.jpg" alt="">
 								</div>
@@ -180,9 +189,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-a">
+					<div class="col-lg-3 col-md-6 col-12 mix category-a">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-3.jpg" alt="">
 								</div>
@@ -193,9 +202,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-a">
+					<div class="col-lg-3 col-md-6 col-12 mix category-a">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-4.jpg" alt="">
 								</div>
@@ -206,9 +215,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-a">
+					<div class="col-lg-3 col-md-6 col-12 mix category-a">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-5.jpg" alt="">
 								</div>
@@ -219,9 +228,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-a">
+					<div class="col-lg-3 col-md-6 col-12 mix category-a">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-6.jpg" alt="">
 								</div>
@@ -232,9 +241,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-a">
+					<div class="col-lg-3 col-md-6 col-12 mix category-a">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-7.jpg" alt="">
 								</div>
@@ -245,9 +254,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-a">
+					<div class="col-lg-3 col-md-6 col-12 mix category-a">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-8.jpg" alt="">
 								</div>
@@ -258,9 +267,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-a">
+					<div class="col-lg-3 col-md-6 col-12 mix category-a">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-8.jpg" alt="">
 								</div>
@@ -271,9 +280,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-a">
+					<div class="col-lg-3 col-md-6 col-12 mix category-a">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-9.jpg" alt="">
 								</div>
@@ -284,9 +293,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-a">
+					<div class="col-lg-3 col-md-6 col-12 mix category-a">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-11.jpg" alt="">
 								</div>
@@ -297,9 +306,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-a">
+					<div class="col-lg-3 col-md-6 col-12 mix category-a">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-12.jpg" alt="">
 								</div>
@@ -310,9 +319,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-b">
+					<div class="col-lg-3 col-md-6 col-12 mix category-b">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-13.jpg" alt="">
 								</div>
@@ -323,9 +332,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-b">
+					<div class="col-lg-3 col-md-6 col-12 mix category-b">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-14.jpg" alt="">
 								</div>
@@ -337,9 +346,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-b">
+					<div class="col-lg-3 col-md-6 col-12 mix category-b">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-15.jpg" alt="">
 								</div>
@@ -351,9 +360,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-b">
+					<div class="col-lg-3 col-md-6 col-12 mix category-b">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-15.jpg" alt="">
 								</div>
@@ -364,9 +373,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-b">
+					<div class="col-lg-3 col-md-6 col-12 mix category-b">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-16.jpg" alt="">
 								</div>
@@ -377,9 +386,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-b">
+					<div class="col-lg-3 col-md-6 col-12 mix category-b">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-17.jpg" alt="">
 								</div>
@@ -390,9 +399,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-b">
+					<div class="col-lg-3 col-md-6 col-12 mix category-b">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-18.jpg" alt="">
 								</div>
@@ -404,9 +413,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-b">
+					<div class="col-lg-3 col-md-6 col-12 mix category-b">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-19.jpg" alt="">
 								</div>
@@ -417,9 +426,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-b">
+					<div class="col-lg-3 col-md-6 col-12 mix category-b">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-20.jpg" alt="">
 								</div>
@@ -430,9 +439,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-b">
+					<div class="col-lg-3 col-md-6 col-12 mix category-b">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-21.jpg" alt="">
 								</div>
@@ -443,9 +452,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-b">
+					<div class="col-lg-3 col-md-6 col-12 mix category-b">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-22.jpg" alt="">
 								</div>
@@ -456,9 +465,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-c">
+					<div class="col-lg-3 col-md-6 col-12 mix category-c">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-23.jpg" alt="">
 								</div>
@@ -469,9 +478,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-c">
+					<div class="col-lg-3 col-md-6 col-12 mix category-c">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-24.jpg" alt="">
 								</div>
@@ -483,9 +492,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-c">
+					<div class="col-lg-3 col-md-6 col-12 mix category-c">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-25.jpg" alt="">
 								</div>
@@ -497,9 +506,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-c">
+					<div class="col-lg-3 col-md-6 col-12 mix category-c">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-26.jpg" alt="">
 								</div>
@@ -511,9 +520,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-3 mix category-c">
+					<div class="col-lg-3 col-md-6 col-12 mix category-c">
 						<div class="rent__item">
-							<a class="popup-with-form" href="#test-form">
+							<a class="popup-with-form" href="#test-form-rent">
 								<div class="rent__img">
 									<img src="img/rent/rent-27.jpg" alt="">
 								</div>
@@ -533,7 +542,7 @@
 		<section class="banner">
 			<div class="container">
 				<div class="row">
-					<div class="col-6 offset-6">
+					<div class="col-md-6 offset-md-6 col-12">
 						<div class="banner__inner">
 							<h2 class="banner__title">Когда у вас свадьба</h2>
 							<p class="banner__desc">Рождество, ежегодник, юбилей или детский праздник, делайте свои фотографии здесь!
@@ -557,7 +566,7 @@
 			</div>
 			<div class="container mt-5">
 				<div class="row">
-					<div class="col-4">
+					<div class="col-md-4 col-12">
 						<div class="photograph__item">
 							<div class="photograph__img">
 								<img src="img/photograph/photograth-1.jpg" alt=""></div>
@@ -572,7 +581,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-md-4 col-12">
 						<div class="photograph__item">
 							<div class="photograph__img">
 								<img src="img/photograph/photograth-2.jpg" alt=""></div>
@@ -587,7 +596,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-md-4 col-12">
 						<div class="photograph__item">
 							<div class="photograph__img">
 								<img src="img/photograph/photograth-3.jpg" alt=""></div>
@@ -617,56 +626,56 @@
 			</div>
 			<div class="container">
 				<div class="row popup-gallery">
-					<div class="col-3 photo-from-us__item">
+					<div class="col-lg-3 col-md-4 col-6 photo-from-us__item">
 						<a href="img/photo/photo-1.jpg" title="The Cleaner">
 							<div class="photo-from-us__img">
 								<img src="img/photo/photo-1.jpg" alt="">
 							</div>
 						</a>
 					</div>
-					<div class="col-3 photo-from-us__item">
+					<div class="col-lg-3 col-md-4 col-6 photo-from-us__item">
 						<a href="img/photo/photo-2.jpg" title="The Cleaner">
 							<div class="photo-from-us__img">
 								<img src="img/photo/photo-2.jpg" alt="">
 							</div>
 						</a>
 					</div>
-					<div class="col-3 photo-from-us__item">
+					<div class="col-lg-3 col-md-4 col-6 photo-from-us__item">
 						<a href="img/photo/photo-3.jpg" title="The Cleaner">
 							<div class="photo-from-us__img">
 								<img src="img/photo/photo-3.jpg" alt="">
 							</div>
 						</a>
 					</div>
-					<div class="col-3 photo-from-us__item">
+					<div class="col-lg-3 col-md-4 col-6 photo-from-us__item">
 						<a href="img/photo/photo-4.jpg" title="The Cleaner">
 							<div class="photo-from-us__img">
 								<img src="img/photo/photo-4.jpg" alt="">
 							</div>
 						</a>
 					</div>
-					<div class="col-3 photo-from-us__item">
+					<div class="col-lg-3 col-md-4 col-6 photo-from-us__item">
 						<a href="img/photo/photo-5.jpg" title="The Cleaner">
 							<div class="photo-from-us__img">
 								<img src="img/photo/photo-5.jpg" alt="">
 							</div>
 						</a>
 					</div>
-					<div class="col-3 photo-from-us__item">
+					<div class="col-lg-3 col-md-4 col-6 photo-from-us__item">
 						<a href="img/photo/photo-6.jpg" title="The Cleaner">
 							<div class="photo-from-us__img">
 								<img src="img/photo/photo-6.jpg" alt="">
 							</div>
 						</a>
 					</div>
-					<div class="col-3 photo-from-us__item">
+					<div class="col-lg-3 col-md-4 col-6 photo-from-us__item d-none d-lg-block">
 						<a href="img/photo/photo-7.jpg" title="The Cleaner">
 							<div class="photo-from-us__img">
 								<img src="img/photo/photo-7.jpg" alt="">
 							</div>
 						</a>
 					</div>
-					<div class="col-3 photo-from-us__item">
+					<div class="col-lg-3 col-md-4 col-6 photo-from-us__item d-none d-lg-block">
 						<a href="img/photo/photo-8.jpg" title="The Cleaner">
 							<div class="photo-from-us__img">
 								<img src="img/photo/photo-8.jpg" alt="">
@@ -684,7 +693,7 @@
 	<footer class="page-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-4">
+				<div class="col-lg-4 col-md-6 col-12">
 					<div class="page-footer__item">
 						<div class="logo-bottom">
 							<img src="img/logo-white.png" alt="логотип">
@@ -701,7 +710,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-2">
+				<div class="col-lg-2 col-md-6 col-12">
 					<div class="page-footer__item">
 						<h2 class="page-footer__title">
 							Навигация
@@ -718,7 +727,7 @@
 						</nav>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-md-6 col-12">
 					<div class="page-footer__item">
 						<h2 class="page-footer__title">
 							Контакты
@@ -726,7 +735,8 @@
 						<address class="page-footer__contacts">
 							<ul>
 								<li><a class="popup-gmaps"
-										href="https://yandex.ru/map-widget/v1/?um=constructor%3A4ead788ef3da2fa14aab3d516419d66fc89c4f43ea5e0d3384a545c4ee02ea4c&amp;source=constructor"> г.
+										href="https://yandex.ru/map-widget/v1/?um=constructor%3A4ead788ef3da2fa14aab3d516419d66fc89c4f43ea5e0d3384a545c4ee02ea4c&amp;source=constructor">
+										г.
 										Краснодар, улица Крупской, 8Б</a></li>
 								<li>Email: <a href="mailto:mail@mail.ru">mail@mail.ru</a></li>
 								<li>Тел.: <a href="tel:+79181112224">01: +7 918 111 22 24</a></li>
@@ -736,7 +746,7 @@
 						</address>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-md-6 col-12">
 					<div class="page-footer__item">
 						<h2 class="page-footer__title">
 							Подпишись на рассылку
@@ -744,10 +754,12 @@
 						<p class="litle-text">
 							*-Узнавайте последние новости, получайте скидки и учавствуйте в акциях
 						</p>
-						<form action="" id="subscribe">
+						<form id="subscribe">
 							<input class="input-form_sub" type="email" name="email" id="email" placeholder="Ваш e-mail">
-							<button type="submit" form="subscribe" class="input-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+							<button type="submit" form="subscribe" class="input-submit"><i class="fa fa-paper-plane"
+									aria-hidden="true"></i></button>
 						</form>
+						<div id="result"></div>
 					</div>
 				</div>
 			</div>
@@ -756,32 +768,30 @@
 
 
 	<!-- form itself -->
-	<ol id="test-form" class="mfp-hide white-popup-block">
-		<h1>Form</h1>
+	<form id="test-form-rent" class="mfp-hide white-popup-block">
+		<h1>Забронировать</h1>
 		<fieldset style="border:0;">
-			<p>Lightbox has an option to automatically focus on the first input. It's strongly recommended to use
-				<code>inline</code> popup type for lightboxes with form instead of <code>ajax</code> (to keep entered data if
-				the user accidentally refreshed the page).</p>
+			<p>Выбранная аппаратура: <span id="order-product"></span></p>
 			<ol>
 				<li>
-					<label for="name">Name</label>
-					<input id="name" name="name" type="text" placeholder="Name" required="">
+					<input id="name" name="name" type="text" placeholder="Имя" required="" class="input-form">
 				</li>
 				<li>
-					<label for="email">Email</label>
-					<input id="email" name="email" type="email" placeholder="example@domain.com" required="">
+					<input id="email" name="email" type="email-order" placeholder="mail@mail.ru" required="" class="input-form">
 				</li>
 				<li>
-					<label for="phone">Phone</label>
-					<input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
+					<input id="phone" name="phone" type="tel" placeholder="Тел. +7475000000" required="" class="input-form">
 				</li>
 				<li>
-					<label for="textarea">Textarea</label><br>
-					<textarea id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea>
+					<textarea id="comment" name="comment" placeholder="Сообщение" class="input-form" rows="6"></textarea>
 				</li>
+				<input id="order" name="order" type="text"  hidden>
 			</ol>
 		</fieldset>
-	</ol>
+		<div class="form__rent__btn__wrap" id="form__rent__btn__wrap">
+			<button class="form__rent__btn btn btn_theme__darken" form="test-form-rent">Забронировать</button>
+		</div>
+	</form>
 
 	<script src="js/scripts.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>

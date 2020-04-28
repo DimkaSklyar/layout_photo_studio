@@ -1,5 +1,18 @@
 $(document).ready(function () {
 
+$("a[href='#test-form-rent']").click(function (e) { 
+  e.preventDefault();
+  $("#order-product").text($(this).find(".rent__name").text());
+  $("#order").text($(this).find(".rent__name").text());
+});
+
+
+$(".mobile__btn").click(function (e) { 
+  e.preventDefault();
+  $(".nav__wrapper").toggleClass("active");
+  $(this).children().toggleClass("fa-bars fa-times");
+});
+
   $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
     disableOn: 700,
     type: 'iframe',
@@ -45,12 +58,58 @@ $(document).ready(function () {
       }
     }
   });
-
-
+  let count = 8;
+  if ($(window).width() < 700) {
+    count = 6;
+  }
   var mixer = mixitup(".rent__items", {
     pagination: {
-      limit: 8 // impose a limit of 8 targets per page
+      
+      limit:  count // impose a limit of 8 targets per page
     }
   });
 
+});
+
+
+function AjaxFormRequest(result_id, formMain, url) {
+  jQuery.ajax({
+    url: url,
+    type: "POST",
+    dataType: "html",
+    data: jQuery("#" + formMain).serialize(),
+    success: function (response) {
+      $(':input', '#' + formMain)
+        .not(':button, :submit, :reset, :hidden')
+        .val('')
+        .removeAttr('checked')
+        .removeAttr('selected');
+      setTimeout(() => {
+        $("#message").hide();
+      }, 5000);
+    },
+    error: function (response) {
+      var par = document.getElementById(result_id);
+      var error = document.createElement('p');
+      error.classList.add("mt-3","result");
+      error.innerHTML = "Возникла ошибка при отправке формы.";
+      par.appendChild(error);
+      setTimeout(func, 700);
+    }
+  });
+}
+
+function func() {
+  $("p.mt-3").detach();
+}
+
+
+$("#test-form-rent").submit(function (e) { 
+  e.preventDefault();
+  AjaxFormRequest('form__rent__btn__wrap', 'test-form-rent', './order.php');
+});
+
+$("#subscribe").submit(function (e) { 
+  e.preventDefault();
+  AjaxFormRequest('result', 'subscribe', './subscribe.php');
 });

@@ -4,6 +4,9 @@
 @import "libs"
 
 /*==========  user style  ==========*/
+
+.result
+	font-size: 14px
 a
 	transition: .3s
 	&:link
@@ -21,6 +24,7 @@ a
 	font-weight: 700
 	color: #fff
 	display: inline-block
+	cursor: pointer
 	&_theme__darken
 		background-color: $accent
 		&:hover
@@ -67,6 +71,8 @@ body
 	outline: 0 none
 	cursor: pointer
 	margin: 0 15px
+	+media-breakpoint-down(sm)
+		font-size: 14px
 	&:before
 		content: ''
 		position: absolute
@@ -91,15 +97,23 @@ body
 	background-color: $accent
 	padding: 10px 0
 	text-transform: capitalize
+	+media-breakpoint-down(sm)
+		padding-top: 67px
 	&__desc
 		color: #fff
 		font-size: 14px
 		font-weight: 200
 		margin-bottom: 0
+		+media-breakpoint-down(sm)
+			text-align: center
+			padding: 15px 0 10px
 
 	&__address
 		margin-bottom: 0
 		text-align: right
+		+media-breakpoint-down(sm)
+			text-align: center
+			padding-bottom: 30px
 		a
 			color: #fff
 			font-size: 14px
@@ -109,6 +123,8 @@ body
 
 .bottom-header
 	padding-bottom: 40px
+	+media-breakpoint-down(sm)
+		padding-bottom: 0
 	.top-logo
 		text-align: center
 		padding: 40px 0
@@ -117,8 +133,24 @@ body
 
 	.nav
 
+		&__wrapper
+			+media-breakpoint-down(sm)
+				position: fixed
+				background-color: #fff
+				top: 0
+				bottom: 0
+				right: 100%
+				left: -100%
+				transition: .3s
+				z-index: 9
+				padding-top: 80px
+				&.active
+					left: 0
+					right: 0
 		&__item
 			padding: 0 15px
+			+media-breakpoint-down(sm)
+				padding-bottom: 15px
 		
 		&__link
 			text-transform: uppercase
@@ -126,6 +158,8 @@ body
 			font-weight: 700
 			position: relative
 			padding: 5px 0
+			+media-breakpoint-down(sm)
+				font-size: 24px
 			&:before
 				content: ''
 				position: absolute
@@ -144,23 +178,34 @@ body
 	.top-nav
 		display: flex
 		justify-content: center
+		+media-breakpoint-down(sm)
+			flex-direction: column
 
 .slider
 	background: url('../img/bg.jpg') no-repeat
 	background-position: 50%
+	+media-breakpoint-down(md)
+		background-size: cover
 	&__inner
 		padding-top: 250px
 		padding-bottom: 190px
 		text-align: center
+		+media-breakpoint-down(md)
+			padding: 100px 0
 	&__title
 		text-transform: uppercase
 		font-size: 80px
+		+media-breakpoint-down(md)
+			font-size: 38px
+			padding-top: 40px
 	&__desc
 		font-size: 22px
 		font-weight: 500
 		width: 75%
 		margin: 0 auto
 		margin-bottom: 40px
+		+media-breakpoint-down(md)
+			font-size: 16px
 
 .section__description
 	text-align: center
@@ -170,6 +215,8 @@ body
 		position: relative
 		padding: 10px 0
 		font-size: 36px
+		+media-breakpoint-down(md)
+			font-size: 24px
 		&:before
 			content: ''
 			position: absolute
@@ -188,17 +235,24 @@ body
 	padding: 30px 0
 .advantages
 	padding: 50px 0
-
+	+media-breakpoint-down(sm)
+		padding: 50px 15px
 	&__wrapper
 		padding: 50px 0
+		
 
 	&__item
 		text-align: center
 		padding: 50px 15px
 		border: 1px solid #ccc
+		+media-breakpoint-down(md)
+			margin-bottom: 30px
+			min-height: 310px
 	&__icon
 		font-size: 42px
 		padding-bottom: 10px
+		+media-breakpoint-down(sm)
+			font-size: 52px
 	
 	&__title
 		text-transform: uppercase
@@ -214,13 +268,24 @@ body
 
 .promo
 	display: flex
+	+media-breakpoint-down(sm)
+		flex-direction: column
+
 	.container-width-50
 		padding: 100px 50px
 		width: 50%
-
+		+media-breakpoint-down(md)
+			padding: 60px 50px
+		+media-breakpoint-down(sm)
+			width: 100%
+			
 	&-img
 		background: url('../img/promo.jpg') no-repeat
 		background-position: 50%
+		+media-breakpoint-down(sm)
+			padding: 100px 0 !important
+			background-size: cover
+			background-position: 0 25%
 
 	&-bcg
 		background: url('../img/promo-bcg.jpg') no-repeat
@@ -233,6 +298,8 @@ body
 		position: relative
 		padding-bottom: 20px
 		margin-bottom: 20px
+		+media-breakpoint-down(md)
+			font-size: 32px
 		&:before
 			content: ''
 			position: absolute
@@ -302,6 +369,8 @@ body
 		line-height: 1
 		font-weight: 600
 		text-transform: uppercase
+		+media-breakpoint-down(lg)
+			font-size: 36px
 
 	&__inner
 		text-align: center
@@ -322,6 +391,8 @@ body
 		padding-bottom: 15px
 		text-transform: uppercase
 		padding-top: 15px
+		+media-breakpoint-down(md)
+			font-size: 16px
 		&:before
 			content: ''
 			position: absolute
@@ -357,6 +428,12 @@ body
 	&__img
 		width: 260px
 		height: 260px
+		+media-breakpoint-down(lg)
+			height: 230px
+			width: 230px
+		+media-breakpoint-down(sm)
+			width: auto
+			height: auto
 		img
 			width: 100%
 			height: 100%
@@ -375,7 +452,9 @@ body
 		opacity: .6
 		font-size: 14px
 		margin-bottom: 0
-	
+	&__item
+		+media-breakpoint-down(md)
+			margin-bottom: 20px
 	.social-bottom
 		display: flex
 		li
@@ -390,6 +469,8 @@ body
 	&__title
 		text-transform: uppercase
 		margin-bottom: 30px
+		+media-breakpoint-down(lg)
+			font-size: 20px
 	
 	.nav__bottom
 		li
@@ -398,6 +479,8 @@ body
 			text-transform: uppercase
 			color: #fff
 			opacity: .6
+			+media-breakpoint-down(lg)
+			font-size: 14px
 			&:hover
 				opacity: 1
 
@@ -407,6 +490,8 @@ body
 			margin-bottom: 5px
 			font-size: 14px
 			font-weight: 300
+			+media-breakpoint-down(lg)
+				white-space: nowrap
 			a
 				color: #fff
 				opacity: .6
@@ -461,4 +546,50 @@ body
 .mixitup-page-list
 	text-align: center
 
+
+.mobile
+	padding: 8px 15px
+	background-color: #fff
+	box-shadow: 0 2px 6px rgba(136, 136, 136, 0.26)
+	position: fixed
+	z-index: 100
+	right: 0
+	left: 0
+	&__btn
+		border: none
+		background: none
+		cursor: pointer
+		font-size: 32px
+		&:focus
+			outline: 0 none
+
+#test-form-rent
+	max-width: 600px
+	background-color: #fff
+	margin: auto
+	padding: 15px 30px
+	h1
+		text-align: center
+	input,
+	textarea
+		width: 100%
+		margin-bottom: 15px
+	ol
+		list-style: none
+		margin: 0
+		padding: 0
+	#order-product
+		font-weight: bold
+
+.input-form
+	padding: 18px 20px
+	border: 1px solid #f8f8f8
+	background-color: #f8f8f8
+	font-size: 16px
+	font-size: 1rem
+	line-height: 1.2143
+	transition: .3s
+
+.form__rent__btn__wrap
+	text-align: center
 @import "media" // Always at the end
