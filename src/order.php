@@ -2,12 +2,13 @@
 if($_POST) 
 { 
 $to = "mail@mail.ru"; //куда отправлять письмо 
-$subject = "Заказ!"; //тема 
+$subject = "Бронирование техники!"; //тема 
 $message = '<span style="font-weight:bold;color:#ff6600;font-size:18px;"><i>Бронирование техники!</i> </span><br><br> 
 Имя: <span style="font-weight:bold;color:#000;">'.$_POST['name'].'</span><br> 
 E-mail: <span style="font-weight:bold;color:#000;">'.$_POST['email-order'].'</span><br> 
 Телефон: <span style="font-weight:bold;color:#339900;">'.$_POST['phone'].'</span><br>
 Аппаратура: <span style="font-weight:bold;color:#339900;">'.$_POST['order'].'</span><br> 
+Дата бронирования: <span style="font-weight:bold;color:#339900;">'.$_POST['input-date'].'</span><br> 
 Комментарий: <span style="font-weight:bold;color:#339900;font-size:24px;"> '.$_POST['comment'].'</span>'; 
 $headers = "Content-type: text/html; charset=UTF-8 \r\n"; 
 $headers .= "From: mail@mail.ru\r\n"; // от кого, придумайте ящик или укажите почту своего сайта. 

@@ -8560,30 +8560,36 @@ body {
   outline: 0 none;
 }
 
-#test-form-rent {
+#test-form-rent,
+#form-rent-main {
   max-width: 600px;
   background-color: #fff;
   margin: auto;
   padding: 15px 30px;
 }
 
-#test-form-rent h1 {
+#test-form-rent h1,
+  #form-rent-main h1 {
   text-align: center;
 }
 
 #test-form-rent input,
-  #test-form-rent textarea {
+  #test-form-rent textarea,
+  #form-rent-main input,
+  #form-rent-main textarea {
   width: 100%;
   margin-bottom: 15px;
 }
 
-#test-form-rent ol {
+#test-form-rent ol,
+  #form-rent-main ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#test-form-rent #order-product {
+#test-form-rent #order-product,
+  #form-rent-main #order-product {
   font-weight: bold;
 }
 
@@ -8747,6 +8753,88 @@ body {
 .other-page .contacts #feedback ol input,
     .other-page .contacts #feedback ol textarea {
   width: 100%;
+}
+
+.other-page .information-rent {
+  padding-top: 100px;
+}
+
+.other-page .information-rent .section__title {
+  margin-bottom: 40px;
+}
+
+.other-page .information-rent a {
+  white-space: nowrap;
+  color: #000;
+  font-weight: bold;
+}
+
+.other-page .information-rent h2 {
+  font-size: 32px;
+}
+
+.other-page .information-rent p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.other-page .information-rent .link-page-room {
+  color: #000;
+  text-decoration: underline;
+}
+
+.other-page .information-rent .read-more__wrapper {
+  text-align: center;
+}
+
+.other-page .information-rent .read-more__wrapper .btn:hover {
+  color: #fff;
+}
+
+.other-page .rent {
+  padding-top: 25px;
+}
+
+.other-page .information {
+  padding: 100px 0;
+}
+
+.other-page .information .link-page-room {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.other-page .information__item {
+  margin-bottom: 15px;
+  font-size: 20px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.other-page .information__item:before {
+  position: absolute;
+  content: "\f083";
+  font-family: "FontAwesome";
+  left: 0;
+  top: 0px;
+  color: #000;
+}
+
+.other-page .information .read-more__wrapper {
+  text-align: center;
+}
+
+input[type=datetime-local]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type=datetime-local]::-webkit-clear-button {
+  display: none;
+}
+
+input[type=datetime-local]::-webkit-calendar-picker-indicator {
+  background-color: #fff;
 }
 
 /*==========  Desktop First  ==========*/

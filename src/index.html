@@ -768,30 +768,35 @@
 
 
 	<!-- form itself -->
-	<form id="test-form-rent" class="mfp-hide white-popup-block">
-		<h1>Забронировать</h1>
-		<fieldset style="border:0;">
-			<p>Выбранная аппаратура: <span id="order-product"></span></p>
-			<ol>
-				<li>
-					<input id="name" name="name" type="text" placeholder="Имя" required="" class="input-form">
-				</li>
-				<li>
-					<input id="email-order" name="email-order" type="email" placeholder="mail@mail.ru" required="" class="input-form">
-				</li>
-				<li>
-					<input id="phone" name="phone" type="tel" placeholder="Тел. +7475000000" required="" class="input-form">
-				</li>
-				<li>
-					<textarea id="comment" name="comment" placeholder="Сообщение" class="input-form" rows="6"></textarea>
-				</li>
-				<input id="order" name="order" type="text"  hidden>
-			</ol>
-		</fieldset>
-		<div class="form__rent__btn__wrap" id="form__rent__btn__wrap">
-			<button class="form__rent__btn btn btn_theme__darken" form="test-form-rent">Забронировать</button>
-		</div>
-	</form>
+  <form id="test-form-rent" class="mfp-hide white-popup-block">
+    <h1>Забронировать</h1>
+    <fieldset style="border:0;">
+      <p>Выбранная аппаратура: <span id="order-product"></span></p>
+      <ol>
+        <li>
+          <input id="name" name="name" type="text" placeholder="Имя" required="" class="input-form">
+        </li>
+        <li>
+          <input id="email-order" name="email-order" type="email" placeholder="mail@mail.ru" required=""
+            class="input-form">
+        </li>
+        <li>
+          <input id="phone" name="phone" type="tel" placeholder="Тел. +7475000000" required="" class="input-form">
+        </li>
+        <li>
+          <textarea id="comment" name="comment" placeholder="Сообщение" class="input-form" rows="6"></textarea>
+        </li>
+        <li>
+          <label for="input-date">Дата бронирования:</label>
+          <input type="datetime-local" id="input-date" class="input-form">
+        </li>
+        <input id="order" name="order" type="text" hidden>
+      </ol>
+    </fieldset>
+    <div class="form__rent__btn__wrap" id="form__rent__btn__wrap">
+      <button class="form__rent__btn btn btn_theme__darken" form="test-form-rent">Забронировать</button>
+    </div>
+  </form>
 
 	<script src="js/scripts.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
